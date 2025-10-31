@@ -6,10 +6,10 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Template'
-copyright = '2024, Author'
-author = 'Author'
-release = '0.1'
+project = 'VCA'
+copyright = '2025, idyllm'
+author = 'idyllm'
+release = '1.0'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

@@ -135,3 +135,22 @@ where :math:`A` is the gain in V/V and :math:`V` is the CV input in Volts. With 
 .. image:: ./_static/images/gain_vs_CV_2025-06-19.png
     :width: 480px
 
+Linear to Exponential Conversion
+--------------------------------
+
+**References**
+
+1. Aaron Lanterman, "ECE4450 L18: Exponential Voltage-to-Current Conversion", [`youtube <https://www.youtube.com/watch?v=ZWJhApUmfEU>`_]
+2. Ken Stone, "R6 Gate (VCA)/Ring Modulator" (drawn from the Serge R6), [`archive <https://web.archive.org/web/20211206140530/http://serge.synth.net/modules/r6_mod/index.html>`_]
+3. Ray Wilson, "Dual Log/Linear VCA", [`MFOS <https://musicfromouterspace.com/analogsynth_new/DUALVCA/DLLVCA001.html>`_]
+4. Rene Schmitz, "A tutorial on exponential converters and temperature compensation", [`schmitzbits.de <https://schmitzbits.de/expo_tutorial/index.html>`_]
+5. Hal Chamberlain, "Musical Applications of Microprocessors", 2nd ed., Hayden Books, 1987 
+
+This section is an effort to collect theory and derivations related to linear to exponential conversion circuits. There are a few conventions to be aware of:
+
+* *Exponential* behaviour in circuits is often refered to as "logarithmic," e.g. "log/lin VCA". Mathemtically, it's an exponential function.
+* Voltage controlled amplifier (VCA) circuits are often referred to as "gates."
+* "Ring modulators" are equivalent to a mulitplier. The name comes from the ring of diodes used in some implementations (e.g. frequency mixers in radio applications.).  
+
+
+
