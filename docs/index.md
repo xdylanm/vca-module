@@ -14,7 +14,7 @@ A dual VCA module based on the LM13700 in the Eurorack format.
 The module is implemented with the LM13700 and features
 
 * two independent DC-coupled VCAs
-* linear gain control with unity gain at 5V
+* linear gain control with unity gain at 8V
 
 ## Documentation
 

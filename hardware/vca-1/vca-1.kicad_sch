@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Dual VCA")
-		(date "2025-06-20")
+		(date "2025-10-31")
 		(rev "1.1")
 		(company "idyllm")
 		(comment 1 "CC BY-SA 4.0")
@@ -3406,6 +3406,66 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "AUDIO IN"
+		(exclude_from_sim no)
+		(at 28.448 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "365955c7-960a-4f0f-85f7-e62cda703a20")
+	)
+	(text "AUDIO OUT"
+		(exclude_from_sim no)
+		(at 162.052 188.722 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5d561140-1e95-46f0-84c9-8722b0f75d02")
+	)
+	(text "AUDIO OUT"
+		(exclude_from_sim no)
+		(at 165.608 97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "692f8765-63eb-404d-8bf0-e121c63b03dc")
+	)
+	(text "CV IN\n(0-8V)"
+		(exclude_from_sim no)
+		(at 36.576 141.732 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "9240c267-9f53-4833-95a9-bfac9b6ab694")
+	)
+	(text "CV IN\n(0-8V)"
+		(exclude_from_sim no)
+		(at 42.418 51.054 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e3b3f454-b002-484a-af04-18e72c0d02d2")
+	)
+	(text "AUDIO IN"
+		(exclude_from_sim no)
+		(at 29.464 182.626 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f4c098aa-358b-43fd-b47c-6d3c9a5a3fbc")
+	)
 	(junction
 		(at 66.04 181.61)
 		(diameter 0)
@@ -3629,6 +3689,10 @@
 		(uuid "e54b0321-c773-433d-9dff-180512e5b3d9")
 	)
 	(no_connect
+		(at 152.4 179.07)
+		(uuid "03e85021-7d24-4932-8ae1-81956ccdd27a")
+	)
+	(no_connect
 		(at 265.43 134.62)
 		(uuid "092aaf59-ec2c-4ba1-9701-469f5dd80e66")
 	)
@@ -3637,8 +3701,28 @@
 		(uuid "3009bcc5-268b-4dfa-a3bd-c9c6bfd0ea76")
 	)
 	(no_connect
+		(at 35.56 172.72)
+		(uuid "3bf6db00-3cf2-43c9-9b39-3d4d7f94d223")
+	)
+	(no_connect
+		(at 45.72 130.81)
+		(uuid "3fcb0a41-72b9-4317-a1ad-5d6c3897fd3d")
+	)
+	(no_connect
 		(at 275.59 137.16)
 		(uuid "4f5e827c-a8ef-4c18-b01f-de05392e2ac2")
+	)
+	(no_connect
+		(at 49.53 40.64)
+		(uuid "7bcd85c2-5182-4d19-bdf8-8d65239b0b8a")
+	)
+	(no_connect
+		(at 35.56 82.55)
+		(uuid "85d18178-276a-4886-9a23-ad51ddaf03cd")
+	)
+	(no_connect
+		(at 156.21 88.9)
+		(uuid "bcb5081d-d573-4731-a7c1-cd506e441799")
 	)
 	(no_connect
 		(at 264.16 151.13)
@@ -4286,7 +4370,7 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 175.26) (xy 46.99 175.26)
+			(xy 35.56 175.26) (xy 46.99 175.26)
 		)
 		(stroke
 			(width 0)
@@ -4356,7 +4440,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 177.8) (xy 33.02 177.8)
+			(xy 36.83 177.8) (xy 35.56 177.8)
 		)
 		(stroke
 			(width 0)
@@ -4416,7 +4500,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 181.61) (xy 34.29 177.8)
+			(xy 36.83 181.61) (xy 36.83 177.8)
 		)
 		(stroke
 			(width 0)
@@ -5126,17 +5210,16 @@
 	)
 	(symbol
 		(lib_id "Connector_Audio:AudioJack2_SwitchT")
-		(at 27.94 175.26 0)
+		(at 30.48 175.26 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "02c4f0ac-b37f-4fcc-9f16-55529fdd35e9")
 		(property "Reference" "J5"
-			(at 22.86 173.3549 0)
+			(at 25.4 173.3549 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5144,8 +5227,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "AUDIO IN"
-			(at 22.86 175.8949 0)
+		(property "Value" "WQP-PJ323M"
+			(at 25.4 175.8949 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5154,7 +5237,7 @@
 			)
 		)
 		(property "Footprint" "AudioJacks:Jack_3.5mm_QingPu_WQP-PJ323M_Horizontal"
-			(at 27.94 175.26 0)
+			(at 30.48 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5163,7 +5246,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 27.94 175.26 0)
+			(at 30.48 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5172,7 +5255,7 @@
 			)
 		)
 		(property "Description" "Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)"
-			(at 27.94 175.26 0)
+			(at 30.48 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5349,7 +5432,7 @@
 				)
 			)
 		)
-		(property "Value" "49k9"
+		(property "Value" "68k"
 			(at 119.38 167.64 90)
 			(effects
 				(font
@@ -5485,7 +5568,7 @@
 				)
 			)
 		)
-		(property "Value" "49k9"
+		(property "Value" "68k"
 			(at 123.19 77.47 90)
 			(effects
 				(font
@@ -6562,7 +6645,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "LIN CV IN"
+		(property "Value" "WQP-PJ323M"
 			(at 39.37 43.8149 0)
 			(effects
 				(font
@@ -6907,7 +6990,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "LIN CV IN"
+		(property "Value" "WQP-PJ323M"
 			(at 35.56 133.9849 0)
 			(effects
 				(font
@@ -7529,7 +7612,7 @@
 				)
 			)
 		)
-		(property "Value" "12k"
+		(property "Value" "68k"
 			(at 115.57 30.48 90)
 			(effects
 				(font
@@ -8169,7 +8252,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 34.29 181.61 0)
+		(at 36.83 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8178,7 +8261,7 @@
 		(fields_autoplaced yes)
 		(uuid "7cc63e8b-dae5-42fa-890b-b0df65108768")
 		(property "Reference" "#PWR017"
-			(at 34.29 187.96 0)
+			(at 36.83 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8187,7 +8270,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 34.29 186.69 0)
+			(at 36.83 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8195,7 +8278,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 34.29 181.61 0)
+			(at 36.83 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8204,7 +8287,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 34.29 181.61 0)
+			(at 36.83 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8213,7 +8296,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 34.29 181.61 0)
+			(at 36.83 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8543,7 +8626,7 @@
 				)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "220k"
 			(at 90.17 30.48 90)
 			(effects
 				(font
@@ -9053,7 +9136,7 @@
 				)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "220k"
 			(at 86.36 120.65 90)
 			(effects
 				(font
@@ -9529,7 +9612,7 @@
 				)
 			)
 		)
-		(property "Value" "D_Schottky"
+		(property "Value" "1N5819"
 			(at 228.9175 105.41 0)
 			(effects
 				(font
@@ -9835,7 +9918,7 @@
 				)
 			)
 		)
-		(property "Value" "D_Schottky"
+		(property "Value" "1N5819"
 			(at 228.2825 115.57 0)
 			(effects
 				(font
@@ -10063,7 +10146,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "OUT"
+		(property "Value" "WQP-PJ323M"
 			(at 162.56 182.2449 0)
 			(effects
 				(font
@@ -10272,7 +10355,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "OUT"
+		(property "Value" "WQP-PJ323M"
 			(at 166.37 92.0749 0)
 			(effects
 				(font
@@ -10986,7 +11069,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_02x05_Odd_Even"
+		(property "Value" "IDC Header 10P"
 			(at 204.47 105.41 0)
 			(effects
 				(font
@@ -11080,7 +11163,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "AUDIO IN"
+		(property "Value" "WQP-PJ323M"
 			(at 25.4 85.7249 0)
 			(effects
 				(font
@@ -11218,7 +11301,7 @@
 				)
 			)
 		)
-		(property "Value" "12k"
+		(property "Value" "68k"
 			(at 111.76 120.65 90)
 			(effects
 				(font

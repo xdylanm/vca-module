@@ -1,5 +1,7 @@
 # Design
 
+Calcultions can be found in the [notebook](design_calc.ipynb).
+
 ## Linear V-to-I Converter
 
 ![image](./assets/images/lin_voltage_to_current.png){width="480"}
@@ -24,19 +26,19 @@ The input CV is assumed to be a positive envelope with a range from 0 to
 impedance is $R_1 = 100k\Omega$. With these constraints,
 
 $$\begin{aligned}
-\to 0.001 &= 10\left(\frac{R_2 + R_3}{10^{5} R_3}\right) \\
-\to 10 &= \frac{R_2}{R_3} + 1 \\
-\to R_2 &= 9 R_3
+\to 0.0005 &= 10\left(\frac{R_2 + R_3}{10^{5} R_3}\right) \\
+\to 5 &= \frac{R_2}{R_3} + 1 \\
+\to R_2 &= 4 R_3
 \end{aligned}$$
 
-Choosing $R_3 = 12k\Omega$ and $R_2 = 100k\Omega$ ensures that the
-current is limited to less than 1mA. A diode in the feedback loop
+Choosing $R_3 = 68k\Omega$ and $R_2 = 220k\Omega$ ensures that nominally the
+current is limited to less than 500uA. A diode in the feedback loop
 ensures that negative voltages are not passed to the BJT. The gain of
 the CV stage is then
 
-$$\frac{i_c}{v_{in}} = \frac{R_2 + R_3}{R_1 R_3} = 93.3 \frac{\mu A}{V}$$
+$$\frac{i_c}{v_{in}} = \frac{R_2 + R_3}{R_1 R_3} = 42.4 \frac{\mu A}{V}$$
 
-and at an input level of 5V, the output current is 0.467mA.
+and at an input level of 8V, the output current is 338.8uA.
 
 ## OTA and Output Buffer
 
@@ -83,15 +85,16 @@ v_{out} &\simeq 19.2 \frac{220}{10^5} i_{abc} R v_{in} \\
 &= 0.04224 i_{abc} v_{in} R
 \end{aligned}$$
 
-This design will assume unity gain for the audio signal with a 5V CV
-input. With a 5V CV input, $i_{abc} = 0.467 mA$,
+This design will assume unity gain for the audio signal with a 8V CV
+input (matching the peak voltage from a 555-based ADSR). 
+With an 8V CV input, $i_{abc} = 0.339 mA$,
 
 $$\begin{aligned}
-\frac{v_{out}}{v_{in}} = 1 &= 0.04224 \times 0.467(10^{-3}) R \\
-\to R &\simeq 50.7 k\Omega
+\frac{v_{out}}{v_{in}} = 1 &= 0.04224 \times 0.339(10^{-3}) R \\
+\to R &\simeq 69.9 k\Omega
 \end{aligned}$$
 
-Letting $R = 47k\Omega$ should be close enough here.
+Letting $R = 68k\Omega$ should be close enough here: the gain at 8V input CV is 0.97.
 
 ## Linear to Exponential Conversion
 
