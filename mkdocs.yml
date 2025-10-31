@@ -4,7 +4,9 @@ repo_url: https://github.com/xdylanm/vca-module
 
 nav:
   - Home: index.md
-  - Design: theory.md
+  - Design: 
+    - theory.md
+    - Notebook: assets/design_calc.ipynb
   - Assembly: assembly.md
   - Schematic: assets/schematic.pdf
 

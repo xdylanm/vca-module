@@ -1,6 +1,6 @@
-# Design
+# VCA Design
 
-Calcultions can be found in the [notebook](design_calc.ipynb).
+Calcultions can be found in the [notebook](assets/design_calc.ipynb).
 
 ## Linear V-to-I Converter
 
