@@ -3,7 +3,7 @@
 A dual VCA module based on the LM13700 in the Eurorack format.
 
 * Module size: 2HP (10mm)
-* Power: ?? (+12V); ?? (-12V)
+* Power: 10mA (+12V); 10mA (-12V)
 
 !!! repository "Project Source"
 

@@ -31,14 +31,17 @@ $$\begin{aligned}
 \to R_2 &= 4 R_3
 \end{aligned}$$
 
-Choosing $R_3 = 68k\Omega$ and $R_2 = 220k\Omega$ ensures that nominally the
-current is limited to less than 500uA. A diode in the feedback loop
+!!! note 
+    $v_1 = -\frac{R_2}{R_1}v_{in}$ and that the output of the opamp connected to the base of the PNP will be limited to around $\pm 10.5V$. To ensure that the opamp can still control the PNP, $v_1 \gtrsim -10.5V$ when $v_{in} \to +12V$: choose $R_2 < R_1$. 
+
+Choosing $R_3 = 15k\Omega$ and $R_2 = 68k\Omega$ ensures that nominally the
+current is limited to less than 500uA (max.: 700uA). A diode in the feedback loop
 ensures that negative voltages are not passed to the BJT. The gain of
 the CV stage is then
 
-$$\frac{i_c}{v_{in}} = \frac{R_2 + R_3}{R_1 R_3} = 42.4 \frac{\mu A}{V}$$
+$$\frac{i_c}{v_{in}} = \frac{R_2 + R_3}{R_1 R_3} = 55.3 \frac{\mu A}{V}$$
 
-and at an input level of 8V, the output current is 338.8uA.
+and at an input level of 8V, the output current is 442.7uA.
 
 ## OTA and Output Buffer
 
@@ -87,14 +90,14 @@ v_{out} &\simeq 19.2 \frac{220}{10^5} i_{abc} R v_{in} \\
 
 This design will assume unity gain for the audio signal with a 8V CV
 input (matching the peak voltage from a 555-based ADSR). 
-With an 8V CV input, $i_{abc} = 0.339 mA$,
+With an 8V CV input, $i_{abc} = 0.443 mA$,
 
 $$\begin{aligned}
-\frac{v_{out}}{v_{in}} = 1 &= 0.04224 \times 0.339(10^{-3}) R \\
-\to R &\simeq 69.9 k\Omega
+\frac{v_{out}}{v_{in}} = 1 &= 0.04224 \times 0.443(10^{-3}) R \\
+\to R &\simeq 53.3 k\Omega
 \end{aligned}$$
 
-Letting $R = 68k\Omega$ should be close enough here: the gain at 8V input CV is 0.97.
+Letting $R = 56k\Omega$ should be close enough here: the gain at 8V input CV is 1.04.
 
 ## Linear to Exponential Conversion
 

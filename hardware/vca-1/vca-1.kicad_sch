@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Dual VCA")
-		(date "2025-10-31")
-		(rev "1.1")
+		(date "2025-11-04")
+		(rev "1.2")
 		(company "idyllm")
 		(comment 1 "CC BY-SA 4.0")
 		(comment 2 "References: Aaron Lanterman, Thomas Henry")
@@ -5432,7 +5432,7 @@
 				)
 			)
 		)
-		(property "Value" "68k"
+		(property "Value" "56k"
 			(at 119.38 167.64 90)
 			(effects
 				(font
@@ -5568,7 +5568,7 @@
 				)
 			)
 		)
-		(property "Value" "68k"
+		(property "Value" "56k"
 			(at 123.19 77.47 90)
 			(effects
 				(font
@@ -7612,7 +7612,7 @@
 				)
 			)
 		)
-		(property "Value" "68k"
+		(property "Value" "15k"
 			(at 115.57 30.48 90)
 			(effects
 				(font
@@ -8626,7 +8626,7 @@
 				)
 			)
 		)
-		(property "Value" "220k"
+		(property "Value" "68k"
 			(at 90.17 30.48 90)
 			(effects
 				(font
@@ -9136,7 +9136,7 @@
 				)
 			)
 		)
-		(property "Value" "220k"
+		(property "Value" "68k"
 			(at 86.36 120.65 90)
 			(effects
 				(font
@@ -11301,7 +11301,7 @@
 				)
 			)
 		)
-		(property "Value" "68k"
+		(property "Value" "15k"
 			(at 111.76 120.65 90)
 			(effects
 				(font
